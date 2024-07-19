@@ -348,7 +348,7 @@ function getDefaultImage(self_identity) {
   return defaultImage[self_identity] || defaultImage["Them"];
 }
 
-//Fetch and display profile information from being clicked gallery card in main.html
+//Fetch and display profile information from being clicked gallery card in index.html
 function displayProfileInfo() {
   const person = JSON.parse(
     localStorage.getItem("selectedPersonToFetchTheirProfilePage") ||
@@ -536,7 +536,7 @@ async function chatWithPerson() {
   });
 
   homeIcon.addEventListener("click", () => {
-    window.location.href = "main.html";
+    window.location.href = "index.html";
   });
 
   closeIcon.addEventListener("click", () => {
@@ -600,7 +600,7 @@ async function chatWithPerson() {
 
     const warningMessage = document.createElement("div");
     warningMessage.innerHTML =
-      "This message is blurred, please upgrade to premium to see the message. If you are a premium user, please check out Center <a href='main.html'>contact us</a>.";
+      "This message is blurred, please upgrade to premium to see the message. If you are a premium user, please check out Center <a href='index.html'>contact us</a>.";
     warningMessage.className =
       "profile-page-chat-content-message-content-from-opposite-warning";
 

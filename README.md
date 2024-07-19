@@ -1,7 +1,7 @@
 # LaiDate: a JavaScript Based Projected
 
-## The project is expected to be completed and launched in September 2024.
-## 🌟Created to provide hands-on experience for students without internship opportunities.🌟
+* The project is expected to be completed and launched in September 2024.
+*##* 🌟Created to provide hands-on experience for students without internship opportunities.🌟
 
 - Developed a dating platform using pure JavaScript, CSS, and HTML, enabling users to search for matches, purchase gifts, chat, and participate in live streaming.
 
