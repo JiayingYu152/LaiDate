@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="registration_page.css" />
+    <script src="../data/rotating-logo.js" defer></script>
+  </head>
+  <body>
+    <div class="registration-page-container">
+      <div class="registration-page-left-component">
+        <form
+          id="signInForm"
+          action="/login"
+          method="post"
+          class="registration_page-form-container"
+        >
+          <h2>Sign in</h2>
+          <div class="form-input-area">
+            <label for="username">Email or mobile phone number</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <button type="submit" class="login-submit-button">Continue</button>
+          <span class="form-input-sentence"
+            >By continuing, you agree to the website
+            <a href="../Terms & Privacy/term_and_condition.html"
+              >Terms of Use</a
+            >
+            and
+            <a href="../Terms & Privacy/privacy_policy.html"
+              >Privacy Notice</a
+            ></span
+          >
+          <div class="collapse-container">
+            <div class="collapse-header" onclick="toggleCollapse()">
+              <span><img src="../data/sort-right.svg" /> Need help?</span>
+            </div>
+            <div
+              class="collapse-content"
+              id="helpContent"
+              style="display: none"
+            >
+              <a href="forgot_password.html">Forgot your password?</a>
+              <a href="../Terms & Privacy/term_and_condition.html"
+                >Other issues with Sign-In</a
+              >
+            </div>
+          </div>
+        </form>
+        <div class="split-line">
+          <span>New to Website?</span>
+        </div>
+        <button class="create-account-button" onclick="redirectToPage()">
+          create your account
+        </button>
+      </div>
+
+      <div
+        id="sign-in-page-registration-page-right-component"
+        class="registration-page-right-component"
+      >
+        <rotating-logo style="border: none"></rotating-logo>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+  <script>
+    // for stop repeating click continue button
+    document.getElementById("signInForm").onsubmit = function () {
+      document.querySelector(".sign-up-submit-button").ariaDisabled = true;
+    };
+    // function for the collapse button click action
+    function toggleCollapse() {
+      var content = document.getElementById("helpContent");
+      content.style.display =
+        content.style.display === "block" ? "none" : "block";
+
+      //change icon direction when click
+      var icon = document.querySelector(".collapse-header img");
+      icon.classList.toggle("rotate-icon");
+    }
+
+    // function for the sign-up button href jump
+    function redirectToPage() {
+      window.location.href = "sign_in_password.html";
+    }
+
+    // fetch the shared footer section here for both sign-in and sign-up page
+    fetch("registration_page_footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+
+    //redirect to main page when click the rotating logo
+    document.addEventListener("DOMContentLoaded", function () {
+      const rotatingLogo = document.getElementById(
+        "sign-in-page-registration-page-right-component"
+      );
+      if (rotatingLogo) {
+        rotatingLogo.addEventListener("click", function () {
+          window.location.href = "../main.html";
+        });
+      } else {
+        console.log("rotatingLogo is not found");
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaiDate, match your love</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="./data/rotating-logo.js" defer></script>
+  </head>
+  <body>
+    <div id="main-page-header-placeholder"></div>
+    <main>
+      <div class="main-page-left-component-container">
+        <div class="main-page-left-upper-component-container">
+          <div
+            class="main-page-left-upper-component-profile-slider"
+            id="main-page-profile-slider-container"
+          ></div>
+        </div>
+        <div class="main-page-left-bottom-component-container">
+          <div
+            id="main-page-left-bottom-component-page-choose-content"
+            class="main-page-left-bottom-component-page-choose-content"
+          >
+            <div class="main-page-left-bottom-component-page-choose-header">
+              <strong> Explore Profiles</strong>
+            </div>
+            <div
+              class="main-page-left-bottom-component-page-choose-header"
+              style="color: lightgray"
+            >
+              Live Streaming (Coming soon)
+            </div>
+          </div>
+          <div
+            id="main-page-left-bottom-component-gallery-show-content"
+            class="main-page-left-bottom-component-gallery-show-content"
+          ></div>
+        </div>
+      </div>
+
+      <div class="main-page-right-component-container">
+        <div class="main-page-right-upper-component-container">
+          <div class="main-page-right-upper-component-my-contacts-header">
+            <span> My Contacts</span>
+          </div>
+          <div class="main-page-right-upper-component-chat-message-content">
+            <strong id="need-to-be-hidden-strong">You have no chats.</strong>
+            <p id="need-to-be-hidden-p">
+              Explore the world and expand your network
+            </p>
+          </div>
+          <div class="main-page-right-upper-component-search-bar-content">
+            <img
+              src="./data/search-globe.svg"
+              style="width: 20px; height: 20px"
+            />
+            <input
+              type="text"
+              placeholder="Search contacts"
+              class="main-page-right-upper-component-search-bar-input-content"
+            />
+            <button class="main-page-right-upper-component-voice-content">
+              <img
+                src="./data/voice-on.svg"
+                style="width: 20px; height: 20px"
+                alt="voice-on"
+                id="main-page-right-upper-component-search-bar-voice-status"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="main-page-right-bottom-component-container">
+          <div class="main-page-right-bottom-component-my-contacts-header">
+            <span>Chat Requests</span>
+            <button
+              class="main-page-right-bottom-component-my-contacts-show-less-button"
+            >
+              SHOW LESS
+            </button>
+          </div>
+          <div class="main-page-right-bottom-component-message-content"></div>
+        </div>
+      </div>
+      <div id="main-page-overlay" class="main-page-overlay-container">
+        <span id="main-page-overlay-close" class="main-page-overlay-close"
+          >&times;</span
+        >
+        <img id="main-page-overlay-img" src="" class="main-page-overlay-img" />
+        <div class="main-page-overlay-bottom-floating-div">
+          <p>Like the picture?</p>
+          <p>Communicate with this user</p>
+          <button id="main-page-overlay-chat-now-button">
+            <img src="./data/white-envelop.svg" />
+            CHAT NOW
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

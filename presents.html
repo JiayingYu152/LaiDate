@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy a gift to show your appreciation.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="presents.css" />
+    <script src="./data/rotating-logo.js" defer></script>
+  </head>
+  <body>
+    <div id="presents-page-header-placeholder"></div>
+    <main>
+      <h1>Bring Gifts and Joy to Your Match</h1>
+      <h3>
+        Surprise your match with a delightful gift, thoughtfully delivered to
+        their doorstep, leaving a lasting impression on their heart.
+      </h3>
+      <ol>
+        <li>Select and purchase gifts using credits.</li>
+        <li>Electronically deliver the chosen gifts to the recipient.</li>
+        <li>
+          Recipients can choose to keep the electronic gift or forward it to
+          someone else.
+        </li>
+        <li>
+          Alternatively, recipients can convert the electronic gift into credit.
+        </li>
+      </ol>
+      <div class="presents-page-switch-bar-container">
+        <h3 id="select-purchase-switch-button">Select and Purchase</h3>
+        <h3 id="gift-bucket-switch-button">Your Bucket of Gifts</h3>
+        <div class="presents-page-switch-bar-credit-content">
+          <span id="presents-page-display-credit">100 CREDIT</span>
+          <strong id="presents-page-refill-button">REFILL</strong>
+        </div>
+      </div>
+      <section
+        id="presents-switch-sections-container"
+        class="presents-switch-sections-container"
+      >
+        <section id="buy-gifts-container" class="buy-gifts-container">
+          Please wait a secode, loading gifts...
+        </section>
+        <section id="gifts-bucket-container" class="gifts-bucket-container">
+          <h4 style="color: darkred" id="gifts-bucket-prompt">
+            The gift bucket is empty. Let's go buy some gifts! You can send
+            gifts to the ones you admire.
+          </h4>
+        </section>
+      </section>
+
+      <!-- The modal when click REFILL CREDIT -->
+      <div
+        id="presents-page-credit-refill-modal"
+        class="presents-page-credit-refill-modal"
+      >
+        <div class="presents-page-credit-refill-modal-content">
+          <span
+            id="presents-page-credit-refill-modal-close-button"
+            class="presents-page-credit-refill-modal-close-button"
+            >&times;</span
+          >
+          <h2>Refill Credits</h2>
+          <div class="presents-page-credit-refill-modal-middle-content">
+            <button id="presents-page-credit-refill-modal-decrease-button">
+              -
+            </button>
+            <input
+              type="number"
+              id="presents-page-credit-count"
+              value="100"
+              min="0"
+            />
+            <button id="presents-page-credit-refill-modal-increase-button">
+              +
+            </button>
+          </div>
+
+          <button
+            id="presents-page-credit-refill-modal-submit-credit-button"
+            class="presents-page-credit-refill-modal-submit-credit-button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <!-- The modal when click credit button: make sure to buy presents -->
+      <div
+        id="presents-page-gift-purchase-modal"
+        class="presents-page-gift-purchase-modal"
+      >
+        <div class="presents-page-gift-purchase-modal-content">
+          <span
+            id="presents-page-gift-purchase-modal-close-button"
+            class="presents-page-gift-purchase-modal-close-button"
+            >&times;</span
+          >
+          <h2>Purchase Quantity</h2>
+          <input
+            type="number"
+            id="presents-page-gift-purchase-count"
+            value="1"
+            min="0"
+          />
+          <button
+            id="presents-page-gift-purchase-modal-submit-credit-button"
+            class="presents-page-gift-purchase-modal-submit-credit-button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <!-- The modal when click Exchange to Credit button: to exchange gift to credit -->
+      <div
+        id="presents-page-exchange-to-credit-modal"
+        class="presents-page-exchange-to-credit-modal"
+      >
+        <div class="presents-page-exchange-to-credit-modal-content">
+          <span
+            id="presents-page-exchange-to-credit-modal-close-button"
+            class="presents-page-exchange-to-credit-modal-close-button"
+            >&times;</span
+          >
+          <h2>Exchange Quantity</h2>
+          <span>How many gift you want to exchange to credit?</span>
+          <input
+            type="number"
+            id="presents-page-exchange-to-credit-count"
+            value="1"
+            min="0"
+          />
+          <button
+            id="presents-page-exchange-to-credit-modal-submit-credit-button"
+            class="presents-page-exchange-to-credit-modal-submit-credit-button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="presents.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

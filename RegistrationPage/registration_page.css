@@ -1,0 +1,370 @@
+/* sign-in and sign up share css starting here: */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 30px auto;
+  font-family: "Roboto", sans-serif;
+  background-color: #ff97bf16;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #767676;
+  margin: 20px auto;
+}
+.footer-divider {
+  height: 1px;
+  background-color: #e7e7e7;
+  width: 80%;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+}
+.footer-upper-container {
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.footer-botton-container {
+  max-width: 412px;
+  width: 100%;
+  font-size: 11px;
+  line-height: 1.456;
+  color: #767676;
+}
+.registration_page-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  border: 2px solid #ff70a6;
+  border-radius: 10px;
+  padding: 20px 25px;
+  gap: 20px;
+}
+.registration_page-form-container h2 {
+  margin: 10px 0;
+  font-weight: 500;
+}
+.form-input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 62px;
+  position: relative;
+}
+.form-input-area label {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.form-input-area input {
+  height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid;
+  padding: 7px 7px;
+}
+.form-input-area input:focus {
+  background-color: azure;
+  border: 2px solid rgba(0, 153, 255, 0.451);
+  outline: none;
+}
+.login-submit-button,
+.sign-up-submit-button {
+  background-color: #ff70a6;
+  color: white;
+  height: 30px;
+  border: 1px solid #ff70a6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+}
+.login-submit-button:hover,
+.sign-up-submit-button:hover {
+  background-color: #db6290;
+  border: 1px solid #db6290;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.form-input-sentence {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.split-line {
+  text-align: center;
+  position: relative;
+  border-top: 1px solid #ccc;
+  line-height: 0.1em;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.split-line span {
+  background-color: #fef8fc;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #767676;
+  font-weight: 400;
+  line-height: unset !important;
+}
+
+/* hover effect */
+.footer-upper-container a,
+.form-input-sentence a,
+.username-holder a,
+.password-row a,
+.collapse-header,
+.collapse-content a,
+.collapse-content a,
+.jump-to-sign-in-able-to-hover-area a,
+.keep-me-signed-in-row a {
+  color: #057af0;
+  text-decoration: none;
+}
+.footer-upper-container a:hover,
+.form-input-sentence a:hover,
+.username-holder a:hover,
+.password-row a:hover,
+.collapse-header span:hover,
+.collapse-content a:hover,
+.collapse-content a:hover,
+.jump-to-sign-in-able-to-hover-area a:hover,
+.keep-me-signed-in-row a:hover {
+  color: darkred;
+  text-decoration: underline;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* sign-in page css starting here:  */
+.registration-page-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.registration_page-form-container h2 {
+  margin-bottom: 0;
+}
+.username-holder {
+  font-size: 13px;
+  line-height: 19px;
+}
+.username-holder span {
+  margin-right: 5px;
+}
+.password-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 19px;
+}
+.collapse-container {
+  font-family: Arial, sans-serif;
+}
+.collapse-header {
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 19px;
+}
+.collapse-header span {
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.collapse-header img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.rotate-icon {
+  transform: rotate(90deg);
+}
+.collapse-content a {
+  display: block;
+  padding: 5px 0;
+}
+.collapse-content a {
+  font-size: 13px;
+  line-height: 19px;
+  margin-left: 26px;
+  color: #057af0;
+  padding: 0;
+  margin-top: 5px;
+}
+.create-account-button {
+  height: 30px;
+  width: 412px;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: transparent;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  text-align: center;
+  white-space: nowrap;
+}
+.create-account-button:hover {
+  background-color: #f7acbf;
+  color: white;
+  border-color: #f7acbf;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* sign-in enter password css starting here: */
+.sign-in-enter-password-page-for-css-adjustment-only
+  .registration_page-form-container {
+  padding-bottom: 40px;
+}
+.keep-me-signed-in-row {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  line-height: 19px;
+  gap: 5px;
+}
+.click-details-modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.modal-content::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fefefe transparent transparent transparent;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #f2f2f2;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.modal-header h3 {
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.modal-title {
+  margin: 0;
+  font-weight: 500;
+}
+.close {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 28px;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.modal-body {
+  padding: 10px 20px;
+}
+.modal-body p {
+  font-size: 13px;
+  color: #333;
+  line-height: 19px;
+}
+
+/* sign-in forgot password page starting here:  */
+.registration-page-container h2 {
+  font-weight: 500;
+}
+.registration-page-container span {
+  font-size: 13px;
+  line-height: 19px;
+}
+.username-find-assistance-area {
+  width: 411px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+}
+.username-find-assistance-area h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.255;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.username-find-assistance-area a {
+  color: #916dd5;
+}
+.registration-page-right-component {
+  width: 290px;
+  height: 290px;
+  cursor: pointer;
+}
+
+/* sign-up page css starting here:  */
+.form-input-area span {
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  margin-bottom: 10px;
+}
+.confirm-password-input-area-make-for-adjsut-css-only {
+  margin-top: 20px;
+}
+.sign-up-page-container .split-line {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.jump-to-sign-in-area {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.jump-to-sign-in-able-to-hover-area img {
+  width: 10px;
+  height: auto;
+  fill: #057af0 !important;
+}
+.jump-to-sign-in-able-to-hover-area img:hover {
+  color: darkred !important;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}

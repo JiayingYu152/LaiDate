@@ -1,0 +1,392 @@
+[
+  {
+    "image_url": "../personaPictures/MichaelThompson.jpeg",
+    "name": "Michael Thompson",
+    "description": "Ambitious and outgoing, loves exploring new horizons.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "../personaPictures/EmilyJohnson.jpeg",
+    "name": "Emily Johnson",
+    "description": "Creative writer who thrives on coffee and good books.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "../personaPictures/JuanCarlos.jpeg",
+    "name": "Juan Carlos",
+    "description": "Passionate about sustainable living and green technologies.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Sarah Lee",
+    "description": "Tech enthusiast and app developer who enjoys a good challenge.",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "../personaPictures/AliHassan.jpeg",
+    "name": "Ali Hassan",
+    "description": "Avid runner and finance guru, always ready to hit the track or crunch numbers.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "../personaPictures/LindaWright.jpeg",
+    "name": "Linda Wright",
+    "description": "Social butterfly with a penchant for event planning and social media.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Thomas Reid",
+    "description": "Health enthusiast and personal trainer dedicated to helping others achieve their fitness goals.",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "../personaPictures/JessicaMiller.jpeg",
+    "name": "Jessica Miller",
+    "description": "Art lover and museum curator, passionate about bringing art closer to the community.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "../personaPictures/AlexFerguson.jpeg",
+    "name": "Alex Ferguson",
+    "description": "A dedicated journalist with a focus on international politics and human rights.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "../personaPictures/RachelKim.jpeg",
+    "name": "Rachel Kim",
+    "description": "Passionate about education and technology, always looking to integrate the two.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Alice",
+    "description": "I believe in kindness and empathy.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Bob",
+    "description": "Always seeking adventure!",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Charlie",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Diana",
+    "description": "Dream big, work hard.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Ethan",
+    "description": "Enjoying life's simple pleasures.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Fiona",
+    "description": "Loving every moment.",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Grace",
+    "description": "",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Henry",
+    "description": "Courage is my strength.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Ivy",
+    "description": "Embracing the journey.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Jack",
+    "description": "Living life to the fullest!",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Kelly",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Liam",
+    "description": "Happiness is contagious.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Mia",
+    "description": "Finding beauty in simplicity.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Nora",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Olivia",
+    "description": "Infinite possibilities.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Peter",
+    "description": "Making dreams a reality.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Quinn",
+    "description": "Every day is a new beginning.",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Rachel",
+    "description": "",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Sam",
+    "description": "Chasing my passions.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Taylor",
+    "description": "Living life with purpose.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Uma",
+    "description": "Believe in yourself!",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Victor",
+    "description": "",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Wendy",
+    "description": "Spread love wherever you go.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Xavier",
+    "description": "Adventures await!",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Yara",
+    "description": "",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Zack",
+    "description": "Dare to be different.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Aria",
+    "description": "Strive for greatness.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Ben",
+    "description": "Adventure is calling!",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Cameron",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Daisy",
+    "description": "Seize the day.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Evan",
+    "description": "Life is an adventure.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Finn",
+    "description": "Stay curious.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Gina",
+    "description": "",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Harry",
+    "description": "Dream big.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Iris",
+    "description": "Be the change you wish to see.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Jordan",
+    "description": "Live in the moment.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Kim",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Lily",
+    "description": "Spread positivity!",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Max",
+    "description": "Adventure awaits!",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Nathan",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Oliver",
+    "description": "Stay true to yourself.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Piper",
+    "description": "Enjoy the little things.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Quincy",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Rose",
+    "description": "Find joy in the journey.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Seth",
+    "description": "Life is an adventure.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Tara",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Uriel",
+    "description": "Believe you can and you're halfway there.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Violet",
+    "description": "Dream big, sparkle more, shine bright.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Wyatt",
+    "description": "",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Xena",
+    "description": "Be fearless in the pursuit of what sets your soul on fire.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Yuki",
+    "description": "Live in the moment.",
+    "self_identity": "Them"
+  },
+  {
+    "image_url": "",
+    "name": "Zara",
+    "description": "",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Aaron",
+    "description": "Strive for greatness.",
+    "self_identity": "Male"
+  },
+  {
+    "image_url": "",
+    "name": "Bella",
+    "description": "Life is beautiful.",
+    "self_identity": "Female"
+  },
+  {
+    "image_url": "",
+    "name": "Chris",
+    "description": "",
+    "self_identity": "Male"
+  }
+]

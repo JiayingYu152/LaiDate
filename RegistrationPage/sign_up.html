@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Registration</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="registration_page.css" />
+  </head>
+  <body>
+    <div class="sign-up-page-container">
+      <form
+        id="signUpForm"
+        action="/signup"
+        method="post"
+        class="registration_page-form-container"
+      >
+        <h2>Create account</h2>
+        <div class="form-input-area">
+          <label for="username">Your name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="First and last name"
+            required
+          />
+        </div>
+        <div class="form-input-area">
+          <label for="username">Primary email</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-input-area">
+          <label for="username">Secondary email</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-input-area">
+          <label for="username">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="At least 6 characters"
+            required
+          />
+          <span>Passwords must be at least 6 characters.</span>
+        </div>
+        <div class="confirm-password-input-area-make-for-adjsut-css-only">
+          <div class="form-input-area">
+            <label for="username">Re-enter password</label>
+            <input
+              type="password"
+              id="confirmedPassword"
+              name="confirmedPassword"
+              required
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="sign-up-submit-button"
+          aria-label="Continue to create your account"
+        >
+          Continue
+        </button>
+        <span class="form-input-sentence"
+          >By continuing, you agree to the website
+          <a href="term_of_use.html">Terms of Use</a> and
+          <a href="term_of_use.html">Privacy Notice</a></span
+        >
+        <div class="split-line"></div>
+        <div class="jump-to-sign-in-area">
+          Already have an account?
+          <div class="jump-to-sign-in-able-to-hover-area">
+            <a href="sign_in.html">Sign in</a>
+            <img src="../data/sort-right.svg" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <footer></footer>
+  <script>
+    // for simple email and phone number format verification
+    document.getElementById("signUpForm").onsubmit = function (event) {
+      var username = document.getElementById("username").value;
+      var emailPattern = /\S+@\S+\.\S+/;
+      var phonePattern = /^[\d\s()+-]+$/;
+      if (!emailPattern.test(username) && !phonePattern.test(username)) {
+        alert("Please enter a valid email address or mobile number.");
+        event.preventDefault();
+      }
+    };
+
+    // for stop repeating click continue button
+    document.getElementById("signUpForm").onsubmit = function () {
+      document.querySelector(".sign-up-submit-button").ariaDisabled = true;
+    };
+
+    // fetch the shared footer section here for both sign-in and sign-up page
+    fetch("registration_page_footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
+</html>

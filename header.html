@@ -1,0 +1,403 @@
+<link rel="stylesheet" href="header.css" />
+<script src="./data/rotating-logo.js" defer></script>
+<script src="header.js"></script>
+<header>
+  <rotating-logo
+    class="header-rotating-logo-container"
+    onclick="location.href='./main.html'"
+  ></rotating-logo>
+  <div>LaiDate.com</div>
+  <div class="header-placeholder-for-css-container"></div>
+  <div class="header-search-container">
+    SEARCH
+    <div class="header-search-dropdown-menu">
+      <div class="header-search-dropdown-modal-title-section">
+        <h3>Search for Your Matches</h3>
+        <button>Set as default</button>
+      </div>
+      <div class="header-search-dropdown-modal-gender-and-age-section">
+        <select id="header-search-dropdown-modal-gender-selected">
+          <option value="Choose your preferences">
+            Choose your preferences
+          </option>
+          <option value="Women looking for Men">Women looking for Men</option>
+          <option value="Women looking for Women">
+            Women looking for Women
+          </option>
+          <option value="Women looking for Non-binary">
+            Women looking for Non-binary
+          </option>
+          <option value="Men looking for Men">Men looking for Men</option>
+          <option value="Men looking for Women">Men looking for Women</option>
+          <option value="Men looking for Non-binary">
+            Men looking for Non-binary
+          </option>
+          <option value="Non-binary looking for Men">
+            Non-binary looking for Men
+          </option>
+          <option value="Non-binary looking for Women">
+            Non-binary looking for Women
+          </option>
+          <option value="Non-binary looking for Non-binary">
+            Non-binary looking for Non-binary
+          </option>
+        </select>
+        <span>Age between</span>
+        <select id="header-search-dropdown-modal-age-min-selected">
+          <option>18</option>
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+          <option>35</option>
+          <option>40</option>
+          <option>45</option>
+          <option>50</option>
+          <option>55</option>
+          <option>60</option>
+          <option>65</option>
+          <option>70</option>
+        </select>
+        <span>and</span>
+        <select id="header-search-dropdown-modal-age-max-selected">
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+          <option>35</option>
+          <option>40</option>
+          <option>45</option>
+          <option>50</option>
+          <option>55</option>
+          <option>60</option>
+          <option>65</option>
+          <option>70+</option>
+        </select>
+      </div>
+      <div class="header-search-dropdown-modal-location-section">
+        <input
+          id="header-search-dropdown-modal-location-input"
+          type="text"
+          placeholder="Enter a city name"
+        />
+        <div
+          id="header-search-dropdown-modal-location-autofill-location-results"
+          class="header-search-dropdown-modal-location-autofill-location-results"
+        ></div>
+      </div>
+
+      <div class="header-search-dropdown-modal-video-availability-section">
+        <input
+          type="checkbox"
+          id="header-search-dropdown-modal-checkbox-for-video-call"
+        />
+        <label for="header-search-dropdown-modal-checkbox-for-video-call"
+          >Available for Video Chat</label
+        >
+      </div>
+
+      <div class="header-search-dropdown-modal-bottom-button-section">
+        <button class="header-search-dropdown-modal-show-my-matches-button">
+          Show My Matches
+        </button>
+        <button class="header-search-dropdown-modal-reset-button">Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-inbox-container">INBOX</div>
+  <div class="header-upgrade-account-container">
+    <button class="header-upgrade-account-button">UPGRADE ACCOUNT</button>
+  </div>
+  <div class="header-dropdown-container">
+    <button class="header-dropdown-button">&#9776;</button>
+    <div class="header-dropdown-menu">
+      <a href="profilePage.html">Profile</a>
+      <div>Dating Network</div>
+      <a href="presents.html">Presents</a>
+      <div id="header-setting-component">Setting</div>
+      <div id="header-help-center-component">Help Center</div>
+      <a href="./Terms & Privacy/term_and_condition.html"
+        >Terms and Condition</a
+      >
+      <a href="./Terms & Privacy/privacy_policy.html">Privacy Policy</a>
+      <!-- <div>Sign out</div> -->
+      <a href="RegistrationPage/sign_in.html">Sign in</a>
+    </div>
+  </div>
+
+  <!-- Setting Modal Here -->
+  <div
+    id="header-setting-modal-container"
+    class="header-setting-modal-container"
+  >
+    <div
+      id="header-setting-modal-container-content"
+      class="header-setting-modal-container-content"
+    >
+      <span
+        id="header-setting-modal-container-content-close"
+        class="header-setting-modal-container-content-close"
+        >&times;</span
+      >
+      <h1>Settings</h1>
+      <h3>Language</h3>
+      <p>Your option will be used on all platforms</p>
+      <select>
+        <option value="English(US)">English(US)</option>
+        <option value="Spanish (Español)">Spanish (Español)</option>
+        <option value="Mandarin Chinese (中文)">Mandarin Chinese (中文)</option>
+        <option value="French (Français)">French (Français)</option>
+        <option value="Arabic (العربية)">Arabic (العربية)</option>
+        <option value="Polish (Polski)">Polish (Polski)</option>
+      </select>
+      <br />
+      <h3>Notification</h3>
+      <p>You can choose the type of notifications you receive</p>
+      <div class="header-setting-modal-container-content-notification-section">
+        <div class="header-setting-modal-container-content-one-notification">
+          <input type="checkbox" id="setting-notifications-one" />
+          <label for="setting-notifications-one">New Message</label>
+        </div>
+
+        <div class="header-setting-modal-container-content-one-notification">
+          <input type="checkbox" id="setting-notifications-two" />
+          <label for="setting-notifications-two">Video Call Invitation</label>
+        </div>
+
+        <div class="header-setting-modal-container-content-one-notification">
+          <input type="checkbox" id="setting-notifications-three" />
+          <label for="setting-notifications-three">New Friend Request</label>
+        </div>
+
+        <div class="header-setting-modal-container-content-one-notification">
+          <input type="checkbox" id="setting-notifications-four" />
+          <label for="setting-notifications-four">Gift Received</label>
+        </div>
+
+        <div class="header-setting-modal-container-content-one-notification">
+          <input type="checkbox" id="setting-notifications-five" />
+          <label for="setting-notifications-five">Event Reminder</label>
+        </div>
+      </div>
+      <br />
+      <h3>Your Email</h3>
+      <p>Your email is secure and private, and it not visible to other users</p>
+      <p>user520@laidate.com</p>
+      <br />
+      <h3>Forget your password</h3>
+      <p>
+        Don't worry, we can help you reset your password
+        <a href="RegistrationPage/forgot_password.html">here</a>.
+      </p>
+      <br />
+      <h3>Change your password</h3>
+      <p class="header-setting-modal-container-content-small-font-paragraph">
+        For security reasons, we recommend you change your password regularly
+      </p>
+      <p class="header-setting-modal-container-content-small-font-paragraph">
+        Make sure to update your password to something memorable yet difficult
+        for others to guess.
+      </p>
+      <input type="password" placeholder="Your new password" />
+      <br />
+      <h3>Manage account</h3>
+      <p>
+        Require a pause?
+        <a href="Terms & Privacy/privacy_policy.html">Visit this location</a> to
+        conceal or eliminate your account.
+      </p>
+      <br />
+      <button class="header-setting-modal-container-save-button">Save</button>
+    </div>
+  </div>
+
+  <!-- Help Center Modal Here -->
+  <div
+    id="header-helper-center-modal-container"
+    class="header-helper-center-modal-container"
+  >
+    <div
+      id="header-helper-center-modal-container-content"
+      class="header-helper-center-modal-container-content"
+    >
+      <span
+        id="header-helper-center-modal-container-content-close"
+        class="header-helper-center-modal-container-content-close"
+        >&times;</span
+      >
+      <h1>Instant Solutions</h1>
+      <h3>Getting Started</h3>
+      <ul>
+        <li>How do I get started with ourPlatform?</li>
+        <li>What are the first steps to create my profile?</li>
+        <li>How do I search for other users?</li>
+        <li>How can I start chatting with someone I'm interested in?</li>
+        <li>How do I set up my profile picture?</li>
+      </ul>
+
+      <h3>Assistance Needed</h3>
+      <ul>
+        <li>What should I do if I encounter an issue with the site?</li>
+        <li>Why am I having trouble accessing certain features?</li>
+        <li>How do I report inappropriate behavior from another user?</li>
+      </ul>
+
+      <h3>General Information</h3>
+      <ul>
+        <li>What are the benefits of a verified profile?</li>
+        <li>How can I ensure the safety of my personal information?</li>
+        <li>Are there any guidelines for creating a successful profile?</li>
+        <li>How does ourPlatform verify user identities?</li>
+        <li>How do I navigate through different sections of the site?</li>
+      </ul>
+
+      <h3>Profile Settings</h3>
+      <ul>
+        <li>How can I customize my profile settings?</li>
+        <li>How do I change my password?</li>
+        <li>What options do I have for privacy settings?</li>
+        <li>How do I manage notifications from ourPlatform?</li>
+        <li>How can I delete my account permanently?</li>
+      </ul>
+
+      <h3>Services and Features</h3>
+      <ul>
+        <li>What communication tools are available on ourPlatform?</li>
+        <li>Are there any premium features I can unlock?</li>
+        <li>How do I send virtual gifts to other users?</li>
+        <li>Can I schedule video calls with matches on ourPlatform?</li>
+        <li>How do I block or hide other users from my profile?</li>
+      </ul>
+
+      <h3>Membership and Payments</h3>
+      <ul>
+        <li>What are the different membership tiers on ourPlatform?</li>
+        <li>How does billing work for premium memberships?</li>
+        <li>What payment methods are accepted on ourPlatform?</li>
+        <li>Why am I being charged extra fees for my subscription?</li>
+        <li>How can I cancel my subscription and stop future payments?</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Update Account Modal Here -->
+  <div
+    id="header-update-account-modal-container"
+    class="header-update-account-modal-container"
+  >
+    <div
+      id="header-update-account-modal-container-content"
+      class="header-update-account-modal-container-content"
+    >
+      <span
+        id="header-update-account-modal-container-content-close"
+        class="header-update-account-modal-container-content-close"
+        >&times;</span
+      >
+      <h2>Upgrade to Premium & Enjoy Dating</h2>
+      <div class="header-update-account-modal-inner-container">
+        <div class="header-update-account-modal-inner-left-content">
+          <div class="header-update-account-modal-inner-left-content-area">
+            <h3>Freemium</h3>
+            <h4>Bonuses Included with Freemium:</h4>
+            <ul>
+              <li>
+                <strong>One-Time Free 100 Credits</strong> Use credits to send
+                gifts to your matches.
+              </li>
+              <li class="header-update-account-modal-inner-grey-font">
+                <strong>Unrestricted Messaging:</strong> Engage in unlimited
+                communication with all members, apart from those categorized as
+                Popular.
+              </li>
+              <li class="header-update-account-modal-inner-grey-font">
+                <strong>Credits Each Month:</strong> Receive credits each month
+                that you can utilize to purchase gifts or unlock premium
+                features.
+              </li>
+              <li class="header-update-account-modal-inner-grey-font">
+                <strong>Full Message Access: </strong>Gain the ability to view
+                all the messages that you receive in your chat inbox.
+              </li>
+            </ul>
+          </div>
+          <button class="header-update-account-modal-inner-button">Free</button>
+        </div>
+        <div class="header-update-account-modal-inner-middle-content">
+          <div class="header-update-account-modal-inner-middle-content-area">
+            <h3 class="header-update-account-modal-larger-h3">🌟 Premium 🌟</h3>
+            <h4>Bonuses Included with Premium Subscription:</h4>
+            <ul>
+              <li>
+                <strong>One-Time Free 100 Credits</strong> Use credits to send
+                gifts to your matches.
+              </li>
+              <li>
+                <strong>Unrestricted Messaging:</strong> Engage in unlimited
+                communication with all members, apart from those categorized as
+                Popular.
+              </li>
+              <li>
+                <strong>Credits Each Month:</strong> Receive credits each month
+                that you can utilize to purchase gifts or unlock premium
+                features.
+              </li>
+              <li>
+                <strong>Full Message Access: </strong>Gain the ability to view
+                all the messages that you receive in your chat inbox.
+              </li>
+            </ul>
+          </div>
+          <button class="header-update-account-modal-inner-button">
+            <strong>Monthly:</strong> 200 Credits for $10.99
+          </button>
+          <button class="header-update-account-modal-inner-button">
+            <strong>Seasonal:</strong> 800 Credits for $29.99
+          </button>
+          <button class="header-update-account-modal-inner-button">
+            <strong>Annual:</strong> 4,000 Credits for $109.99
+          </button>
+        </div>
+        <div class="header-update-account-modal-inner-right-content">
+          <div class="header-update-account-modal-inner-right-content-area">
+            <h3>Credit Purchase</h3>
+            <h4>Bonuses Included is same as Freemium:</h4>
+            <ul>
+              <li>
+                <strong>One-Time Free 100 Credits</strong> Use credits to send
+                gifts to your matches.
+              </li>
+              <li class="header-update-account-modal-inner-grey-font">
+                <strong>Unrestricted Messaging:</strong> Engage in unlimited
+                communication with all members, apart from those categorized as
+                Popular.
+              </li>
+              <li class="header-update-account-modal-inner-grey-font">
+                <strong>Credits Each Month:</strong> Receive credits each month
+                that you can utilize to purchase gifts or unlock premium
+                features.
+              </li>
+              <li class="header-update-account-modal-inner-grey-font">
+                <strong>Full Message Access: </strong>Gain the ability to view
+                all the messages that you receive in your chat inbox.
+              </li>
+            </ul>
+          </div>
+          <button class="header-update-account-modal-inner-button">
+            20 Credits for $0.99
+          </button>
+          <button class="header-update-account-modal-inner-button">
+            220 Credits for $9.99
+          </button>
+          <button class="header-update-account-modal-inner-button">
+            450 Credits for $19.99
+          </button>
+          <button class="header-update-account-modal-inner-button">
+            1,500 Credits for $49.99
+          </button>
+          <button class="header-update-account-modal-inner-button">
+            3,500 Credits for $99.99
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

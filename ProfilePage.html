@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="profilePage.css" />
+  </head>
+  <body>
+    <div id="profile-page-header-placeholder"></div>
+    <main>
+      <div class="profile-page-main-information-container-always-show">
+        <div class="profile-page-main-content-container">
+          <div class="profile-page-upper-component-container">
+            <div class="profile-page-upper-upper-component-container">
+              <!-- profile default background picture placeholder here -->
+            </div>
+            <div class="profile-page-upper-bottom-component-container">
+              <h3 class="profile-page-component-header-h3">A Bit About Me</h3>
+              <div
+                id="profile-page-upper-component-change-icon"
+                class="profile-page-bottom-component-change-icon"
+              ></div>
+            </div>
+            <div class="profile-page-upper-upper-top-layer-container">
+              <button class="profile-page-upper-upper-top-layer-back-button">
+                BACK
+              </button>
+              <button
+                class="profile-page-upper-upper-top-layer-update-background-button"
+              >
+                UPDATE BACKGROUND
+              </button>
+              <div
+                class="profile-page-upper-upper-top-layer-left-bottom-content"
+              >
+                <div
+                  class="profile-page-upper-upper-top-layer-left-bottom-picture-container"
+                >
+                  <button>UPLOAD PHOTO</button>
+                </div>
+                <div
+                  class="profile-page-upper-upper-top-layer-left-bottom-info-content"
+                >
+                  <div
+                    class="profile-page-upper-upper-top-layer-left-bottom-name-age-content"
+                  >
+                    <h1>Name, Age</h1>
+                    <div class="profile-page-upper-component-change-icon"></div>
+                  </div>
+                  <p>ID: number</p>
+                </div>
+              </div>
+              <div class="profile-page-upper-upper-top-layer-refill-button">
+                <span>100 CREDIT</span>
+                <a href="presents.html"> <strong>REFILL</strong></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-page-middle-component-container">
+            <h3 class="profile-page-component-header-h3">
+              Add Your Photos to Get Noticed
+            </h3>
+            <button class="profile-page-middle-component-add-button">
+              ADD
+            </button>
+          </div>
+
+          <div class="profile-page-bottom-component-container">
+            <div class="profile-page-bottom-left-component-container">
+              <div class="profile-page-component-header-section">
+                <h3 class="profile-page-component-header-h3">My Interests</h3>
+                <div
+                  id="profile-page-bottom-left-component-change-icon"
+                  class="profile-page-bottom-component-change-icon"
+                ></div>
+              </div>
+              <div
+                class="profile-page-bottom-left-component-content-container"
+              ></div>
+            </div>
+
+            <div class="profile-page-bottom-middle-component-container">
+              <div class="profile-page-component-header-section">
+                <h3 class="profile-page-component-header-h3">About Me</h3>
+                <div
+                  id="profile-page-bottom-middle-component-change-icon"
+                  class="profile-page-bottom-component-change-icon"
+                ></div>
+              </div>
+              <div
+                class="profile-page-bottom-middle-component-content-container"
+              >
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Location:</span>
+                  <strong id="profile-page-about-me-location-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Occupation:</span>
+                  <strong id="profile-page-about-me-occupation-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Education: </span>
+                  <strong id="profile-page-about-me-education-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Language</span>
+                  <strong id="profile-page-about-me-language-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Height:</span>
+                  <strong id="profile-page-about-me-height-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Weight:</span>
+                  <strong id="profile-page-about-me-weight-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Eyes:</span>
+                  <strong id="profile-page-about-me-eyes-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Hair:</span>
+                  <strong id="profile-page-about-me-hair-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Have kid:</span>
+                  <strong id="profile-page-about-me-have-kids-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Smoke / Vape:</span>
+                  <strong id="profile-page-about-me-smoke-input"
+                    >No answer</strong
+                  >
+                </div>
+
+                <div
+                  class="profile-page-bottom-middle-component-about-me-section"
+                >
+                  <span>Drink:</span>
+                  <strong id="profile-page-about-me-drink-input"
+                    >No answer</strong
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-page-bottom-right-component-container">
+              <div class="profile-page-component-header-section">
+                <h3 class="profile-page-component-header-h3">I Wanna Date</h3>
+                <div
+                  id="profile-page-bottom-right-component-change-icon"
+                  class="profile-page-bottom-component-change-icon"
+                ></div>
+              </div>
+              <div
+                class="profile-page-bottom-right-component-content-container"
+              >
+                <div
+                  class="profile-page-bottom-right-component-looking-for-info-section"
+                >
+                  <strong>Gender, Year Range</strong>
+                </div>
+
+                <div
+                  class="profile-page-bottom-right-component-looking-for-about-section"
+                >
+                  <span>About: <strong>No answer</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="profile-page-footer-p">
+            © Copyright LaiDate.com 2024. All rights reserved
+          </p>
+        </div>
+
+        <div
+          id="profile-page-bottom-left-component-my-interests-change-modal-container"
+          class="profile-page-bottom-left-component-my-interests-change-modal-container"
+        >
+          <div
+            class="profile-page-bottom-left-component-my-interests-change-modal-content"
+          >
+            <span class="profile-page-bottom-left-component-close"
+              >&times;</span
+            >
+            <h2>Select Your Interests</h2>
+            <div
+              class="profile-page-bottom-left-component-my-interests-change-modal-interests-area"
+            ></div>
+            <button
+              class="profile-page-bottom-left-component-my-interests-save-button"
+            >
+              SAVE
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="profile-page-bottom-middle-component-about-me-change-modal-container"
+          class="profile-page-bottom-middle-component-about-me-change-modal-container"
+        >
+          <div
+            class="profile-page-bottom-middle-component-about-me-change-modal-content"
+          >
+            <span class="profile-page-bottom-middle-component-close"
+              >&times;</span
+            >
+            <div
+              class="profile-page-bottom-middle-component-about-me-change-modal-fill-area"
+            >
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>Where do you live?</span>
+                <input
+                  id="profile-page-bottom-middle-component-input-location"
+                  placeholder="Enter your location"
+                />
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What do you work?</span>
+                <input
+                  id="profile-page-bottom-middle-component-input-occupation"
+                  placeholder="You work as"
+                />
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What's your educational level?</span>
+                <select
+                  id="profile-page-bottom-middle-component-input-education"
+                >
+                  <option value=""></option>
+                  <option value="Associate degree">Associate degree</option>
+                  <option value="Bachelor degree">Bachelor degree</option>
+                  <option value="College">College</option>
+                  <option value="High school">High school</option>
+                  <option value="Master degree">Master degree</option>
+                  <option value="PhD">PhD</option>
+                </select>
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What languages do you speak?</span>
+                <input
+                  id="profile-page-bottom-middle-component-input-language"
+                  placeholder="You can speak"
+                />
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What's your height?</span>
+                <input
+                  id="profile-page-bottom-middle-component-input-height"
+                  placeholder="Your height is"
+                />
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What's your weight:</span>
+                <input
+                  id="profile-page-bottom-middle-component-input-weight"
+                  placeholder="Your weight is"
+                />
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What's your eyes color?</span>
+                <select id="profile-page-bottom-middle-component-input-eyes">
+                  <option value=""></option>
+                  <option value="Amber">Amber</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Brown">Brown</option>
+                  <option value="Gray">Gray</option>
+                  <option value="Green">Green</option>
+                  <option value="Hazel">Hazel</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>What's your hair color?</span>
+                <select id="profile-page-bottom-middle-component-input-hair">
+                  <option value=""></option>
+                  <option value="Auburn">Auburn</option>
+                  <option value="Bald"></option>
+                  <option value="Black"></option>
+                  <option value="Blond"></option>
+                  <option value="Brown"></option>
+                  <option value="Chestnut"></option>
+                  <option value="Red"></option>
+                  <option value="Multi-color">Multi-color</option>
+                  <option value="White">White</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>Do you have kid?</span>
+                <select
+                  id="profile-page-bottom-middle-component-input-have-kids"
+                >
+                  <option value=""></option>
+                  <option value="No">No</option>
+                  <option value="Yes, living together">
+                    Yes, living together
+                  </option>
+                  <option value="Yes, not living together">
+                    Yes, not living together
+                  </option>
+                </select>
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>How often do you smoke or vape?</span>
+                <select id="profile-page-bottom-middle-component-input-smoke">
+                  <option value=""></option>
+                  <option value="Never">Never</option>
+                  <option value="Socially">Socially</option>
+                  <option value="Regularly">Regularly</option>
+                  <option value="Frequently">Frequently</option>
+                  <option value="Trying to quit">Trying to quit</option>
+                </select>
+              </div>
+
+              <div
+                class="profile-page-bottom-middle-component-about-me-change-modal-one-question-content"
+              >
+                <span>How often do you drink?</span>
+                <select id="profile-page-bottom-middle-component-input-drink">
+                  <option value=""></option>
+                  <option value="Never">Never</option>
+                  <option value="Socially">Socially</option>
+                  <option value="Regularly">Regularly</option>
+                  <option value="Frequently">Frequently</option>
+                  <option value="Trying to quit">Trying to quit</option>
+                </select>
+              </div>
+            </div>
+            <button
+              class="profile-page-bottom-middle-component-my-interests-save-button"
+            >
+              SAVE
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="profile-page-bottom-right-component-looking-for-change-modal-container"
+          class="profile-page-bottom-right-component-looking-for-change-modal-container"
+        >
+          <div
+            class="profile-page-bottom-right-component-looking-for-change-modal-content"
+          >
+            <span class="profile-page-bottom-right-component-close"
+              >&times;</span
+            >
+            <div
+              class="profile-page-bottom-right-component-looking-for-change-modal-fill-area"
+            >
+              <div
+                class="profile-page-bottom-right-component-looking-for-change-modal-gender-age-area"
+              >
+                <h3>I am a:</h3>
+                <select
+                  id="profile-page-bottom-right-component-looking-for-change-modal-gender-selected"
+                >
+                  <option value="Choose your preferences">
+                    Choose your preferences
+                  </option>
+                  <option value="Women looking for Men">
+                    Women looking for Men
+                  </option>
+                  <option value="Women looking for Women">
+                    Women looking for Women
+                  </option>
+                  <option value="Women looking for Non-binary">
+                    Women looking for Non-binary
+                  </option>
+                  <option value="Men looking for Men">
+                    Men looking for Men
+                  </option>
+                  <option value="Men looking for Women">
+                    Men looking for Women
+                  </option>
+                  <option value="Men looking for Non-binary">
+                    Men looking for Non-binary
+                  </option>
+                  <option value="Non-binary looking for Men">
+                    Non-binary looking for Men
+                  </option>
+                  <option value="Non-binary looking for Women">
+                    Non-binary looking for Women
+                  </option>
+                  <option value="Non-binary looking for Non-binary">
+                    Non-binary looking for Non-binary
+                  </option>
+                </select>
+                <h3>Age between</h3>
+                <select
+                  id="profile-page-bottom-right-component-looking-for-change-modal-age-min-selected"
+                >
+                  <option>18</option>
+                  <option>20</option>
+                  <option>25</option>
+                  <option>30</option>
+                  <option>35</option>
+                  <option>40</option>
+                  <option>45</option>
+                  <option>50</option>
+                  <option>55</option>
+                  <option>60</option>
+                  <option>65</option>
+                  <option>70</option>
+                </select>
+                <h3>and</h3>
+                <select
+                  id="profile-page-bottom-right-component-looking-for-change-modal-age-max-selected"
+                >
+                  <option>20</option>
+                  <option>25</option>
+                  <option>30</option>
+                  <option>35</option>
+                  <option>40</option>
+                  <option>45</option>
+                  <option>50</option>
+                  <option>55</option>
+                  <option>60</option>
+                  <option>65</option>
+                  <option>70+</option>
+                </select>
+              </div>
+
+              <textarea
+                placeholder="Few words about your ideal partner"
+                id="profile-page-bottom-right-component-looking-for-change-modal-about-selected"
+              ></textarea>
+            </div>
+            <button
+              class="profile-page-bottom-right-component-my-interests-save-button"
+            >
+              SAVE
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="profile-page-chat-mostly-hidden-hugest-container">
+        <div class="profile-page-chat-content-header-container">
+          <div class="profile-page-chat-content-header-left-section">
+            <img
+              id="profile-page-chat-content-header-left-image"
+              class="profile-page-chat-content-header-left-image"
+              alt="“Chat User Image"
+            />
+            <strong
+              id="profile-page-chat-content-header-left-name"
+              class="profile-page-chat-content-header-left-name"
+              >name
+            </strong>
+          </div>
+          <div class="profile-page-chat-content-header-right-section">
+            <div
+              id="profile-page-chat-content-header-right-favorite-icon"
+              class="profile-page-chat-content-header-right-favorite-icon"
+            ></div>
+            <div
+              id="profile-page-chat-content-header-right-more-icon"
+              class="profile-page-chat-content-header-right-more-icon"
+            >
+          <div  class="profile-page-chat-content-header-right-more-modal">
+            <p>Mute this user</p>
+            <p>Block this user</p>
+            <p>Report a violation</p>
+          </div>
+          </div>
+            <div
+              id="profile-page-chat-content-header-right-close-icon"
+              class="profile-page-chat-content-header-right-close-icon"
+            ></div>
+            <div
+              id="profile-page-chat-content-header-right-home-icon"
+              class="profile-page-chat-content-header-right-home-icon"
+            ></div>
+          </div>
+        </div>
+
+        <div class="profile-page-chat-content-message-content-container">
+          text message here
+        </div>
+
+        <div class="profile-page-chat-content-user-input-container">
+          <div
+            class="profile-page-chat-content-user-input-container-upper-section"
+          >
+            <div
+              class="profile-page-chat-content-user-input-container-gift-bucket-container"
+            >
+              <span
+                >Ops...Your gift bucket is empty,
+                <a href="presents.html">tap here</a> to get more!</span
+              >
+            </div>
+            <span
+              class="profile-page-chat-content-user-input-container-placeholder"
+            >
+            </span>
+            <div
+              id="profile-page-chat-content-user-input-container-sticker-icon"
+              class="profile-page-chat-content-user-input-container-sticker-icon"
+            ></div>
+            <div
+              id="profile-page-chat-content-user-input-container-photo-icon"
+              class="profile-page-chat-content-user-input-container-photo-icon"
+            ></div>
+          </div>
+          <div
+            class="profile-page-chat-content-user-input-container-bottom-section"
+          >
+            <input type="text" placeholder="Type your message..." />
+            <button
+              id="profile-page-chat-content-user-input-container-bottom-send-button"
+              class="profile-page-chat-content-user-input-container-bottom-send-button"
+            >
+              SEND
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="profilePage.js"></script>
+  <script src="header.js"></script>
+  <script src="./data/rotating-logo.js" defer></script>
+</html>

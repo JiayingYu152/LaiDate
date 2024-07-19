@@ -1,0 +1,152 @@
+[
+  {
+    "giftName": "A Lovely Heart",
+    "giftValue": 1,
+    "giftDescription": "A small heart to express support.",
+    "giftPicture": "../giftPictures/heartGift.webp"
+  },
+  {
+    "giftName": "Milktea",
+    "giftValue": 5,
+    "giftDescription": "A cup of milk tea.",
+    "giftPicture": "../giftPictures/milktea.webp"
+  },
+  {
+    "giftName": "Chocolate",
+    "giftValue": 5,
+    "giftDescription": "Delicate chocolates.",
+    "giftPicture": "../giftPictures/chocolate.webp"
+  },
+  {
+    "giftName": "Flower",
+    "giftValue": 10,
+    "giftDescription": "A virtual bouquet symbolizing beauty and blessings.",
+    "giftPicture": "../giftPictures/flower.webp"
+  },
+  {
+    "giftName": "Birthcake",
+    "giftValue": 10,
+    "giftDescription": "An exquisite birthday cake.",
+    "giftPicture": "../giftPictures/birthcake.webp"
+  },
+  {
+    "giftName": "Lipstick",
+    "giftValue": 15,
+    "giftDescription": "An exquisite lipstick.",
+    "giftPicture": "../giftPictures/lipstick.webp"
+  },
+  {
+    "giftName": "Earing",
+    "giftValue": 20,
+    "giftDescription": "Elegant earrings.",
+    "giftPicture": "../giftPictures/earing.webp"
+  },
+  {
+    "giftName": "Wine",
+    "giftValue": 20,
+    "giftDescription": "A bottle of exquisite wine.",
+    "giftPicture": "../giftPictures/wine.webp"
+  },
+  {
+    "giftName": "Perfume",
+    "giftValue": 20,
+    "giftDescription": "An exquisite perfume.",
+    "giftPicture": "../giftPictures/perfume.webp"
+  },
+  {
+    "giftName": "Earphone",
+    "giftValue": 25,
+    "giftDescription": "High-end earphones.",
+    "giftPicture": "../giftPictures/earphone.webp"
+  },
+  {
+    "giftName": "Skincare Set",
+    "giftValue": 30,
+    "giftDescription": "High-quality skincare products.",
+    "giftPicture": "../giftPictures/skincare.webp"
+  },
+  {
+    "giftName": "Keyboard",
+    "giftValue": 30,
+    "giftDescription": "A mechanical keyboard.",
+    "giftPicture": "../giftPictures/keyboard.webp"
+  },
+  {
+    "giftName": "Switch",
+    "giftValue": 40,
+    "giftDescription": "An exquisite game console.",
+    "giftPicture": "../giftPictures/switch.webp"
+  },
+  {
+    "giftName": "Watch",
+    "giftValue": 50,
+    "giftDescription": "A luxurious watch.",
+    "giftPicture": "../giftPictures/watch.webp"
+  },
+  {
+    "giftName": "Bag",
+    "giftValue": 70,
+    "giftDescription": "A high-end designer bag.",
+    "giftPicture": "../giftPictures/bag.webp"
+  },
+  {
+    "giftName": "Necklace",
+    "giftValue": 80,
+    "giftDescription": "A luxurious necklace.",
+    "giftPicture": "../giftPictures/necklace.webp"
+  },
+  {
+    "giftName": "Ring",
+    "giftValue": 120,
+    "giftDescription": "A luxurious ring.",
+    "giftPicture": "../giftPictures/ring.webp"
+  },
+  {
+    "giftName": "Diamond",
+    "giftValue": 100,
+    "giftDescription": "A precious diamond.",
+    "giftPicture": "../giftPictures/diamond.webp"
+  },
+  {
+    "giftName": "Crown",
+    "giftValue": 150,
+    "giftDescription": "A royal crown.",
+    "giftPicture": "../giftPictures/crown.webp"
+  },
+  {
+    "giftName": "Fireballoon",
+    "giftValue": 180,
+    "giftDescription": "A prominent virtual gift often used to increase interaction.",
+    "giftPicture": "../giftPictures/fireballoon.webp"
+  },
+  {
+    "giftName": "Firework",
+    "giftValue": 200,
+    "giftDescription": "Beautiful fireworks display.",
+    "giftPicture": "../giftPictures/firework.webp"
+  },
+  {
+    "giftName": "Sportscar",
+    "giftValue": 350,
+    "giftDescription": "A high-value virtual Sportscar.",
+    "giftPicture": "../giftPictures/sportscar.webp"
+  },
+  {
+    "giftName": "Barge",
+    "giftValue": 500,
+    "giftDescription": "A luxurious yacht, symbolizing nobility and luxury.",
+    "giftPicture": "../giftPictures/barge.webp"
+  },
+  {
+    "giftName": "Castle",
+    "giftValue": 800,
+    "giftDescription": "A very valuable virtual gift used to express special support.",
+    "giftPicture": "../giftPictures/castle.webp"
+  },
+  {
+    "giftName": "Rocket",
+    "giftValue": 1000,
+    "giftDescription": "A high-end rocket model.",
+    "giftPicture": "../giftPictures/rocket.webp"
+  }
+]

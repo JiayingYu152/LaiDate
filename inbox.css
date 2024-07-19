@@ -1,0 +1,150 @@
+body {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffb3c11a;
+}
+
+main {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inbox-page-switch-bar-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.inbox-page-all-switch-button,
+.inbox-page-unread-switch-button,
+.inbox-page-read-but-unanswered-switch-button,
+.inbox-page-blocked-switch-button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.inbox-page-all-switch-button:hover,
+.inbox-page-unread-switch-button:hover,
+.inbox-page-read-but-unanswered-switch-button:hover,
+.inbox-page-blocked-switch-button:hover {
+  cursor: pointer;
+  color: #a90f3d;
+  text-decoration: underline;
+  transition: background-color 0.3s;
+}
+
+.inbox-page-blocked-switch-button,
+.inbox-page-blocked-switch-button:hover,
+.inbox-page-blocked-switch-button-selected {
+  color: hsl(0, 0%, 70%); /* make BLOCKED button become more gray */
+  font-size: 1.1em;
+}
+
+.inbox-page-all-switch-button-selected,
+.inbox-page-unread-switch-button-selected,
+.inbox-page-read-but-unanswered-switch-button-selected,
+.inbox-page-blocked-switch-button-selected {
+  font-size: 1.5em;
+  text-decoration: underline;
+  transition: text-decoration 0.3s;
+}
+
+.inbox-page-section-content-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  margin: 20px 0;
+}
+
+.inbox-page-all-switch-container,
+.inbox-page-unread-switch-container,
+.inbox-page-read-but-unanswered-switch-container,
+.inbox-page-blocked-switch-container {
+  display: flex;
+}
+
+.inbox-page-section-card-container {
+  height: 72px;
+  width: 100%;
+  min-width: 900px;
+  max-width: 1300px;
+  display: flex;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.inbox-page-section-card-container:hover {
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.inbox-page-section-card-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.inbox-page-section-card-name {
+  width: 100px;
+  text-align: start;
+}
+
+.inbox-page-section-card-message {
+  flex: 1;
+  text-align: start;
+}
+
+.inbox-page-section-card-time {
+  width: 100px;
+  text-align: start;
+}
+
+.inbox-page-section-card-more {
+  height: 30px;
+  width: 30px;
+  background-image: url("data/inactive-more.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.inbox-page-section-card-more:hover {
+  background-image: url("data/active-more.svg");
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}

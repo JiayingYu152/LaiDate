@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Inbox</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="inbox.css" />
+    <script src="./data/rotating-logo.js" defer></script>
+  </head>
+  <body>
+    <div id="inbox-page-header-placeholder"></div>
+    <main>
+      <h1>Your Inbox</h1>
+
+      <div class="inbox-page-switch-bar-container">
+        <button
+          id="inbox-page-all-switch-button"
+          class="inbox-page-all-switch-button"
+        >
+          All
+        </button>
+        <button
+          id="inbox-page-unread-switch-button"
+          class="inbox-page-unread-switch-button"
+        >
+          Unread
+        </button>
+        <button
+          id="inbox-page-read-but-unanswered-switch-button"
+          class="inbox-page-read-but-unanswered-switch-button"
+        >
+          Read But Unanswered
+        </button>
+        <button
+          id="inbox-page-blocked-switch-button"
+          class="inbox-page-blocked-switch-button"
+        >
+          Blocked
+        </button>
+      </div>
+
+      <section class="inbox-page-section-content-container">
+        <section
+          id="inbox-page-all-switch-container"
+          class="inbox-page-all-switch-container"
+        >
+          <div class="inbox-page-section-card-container">
+            <img src="data/personaPictures/them.jpeg" />
+            <span class="inbox-page-section-card-name">Name</span>
+            <span class="inbox-page-section-card-message">Message</span>
+            <span class="inbox-page-section-card-time">Time</span>
+            <div class="inbox-page-section-card-more"></div>
+          </div>
+        </section>
+        <section
+          id="inbox-page-unread-switch-container"
+          class="inbox-page-unread-switch-container"
+        >
+          You do not have any unread messages.
+        </section>
+        <section
+          id="inbox-page-read-but-unanswered-switch-container"
+          class="inbox-page-read-but-unanswered-switch-container"
+        >
+          You do not have any "Read But Unanswered" messages.
+        </section>
+        <section
+          id="inbox-page-blocked-switch-container"
+          class="inbox-page-blocked-switch-container"
+        >
+          You do not have any blocked messages.
+        </section>
+      </section>
+    </main>
+    <script src="inbox.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>
