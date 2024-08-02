@@ -1,4 +1,18 @@
 header {
+  --backgroundLightPink: #ffb3c11a;
+  --darkRed: #a90f3d;
+  --secondDarkRed: #c9184a;
+  --mostLightPink: #ffb3c141;
+  --lightGrey: rgba(0, 0, 0, 0.2);
+  --secondDarkGrey: rgba(0, 0, 0, 0.4);
+  --darkGrey: rgba(0, 0, 0, 0.8);
+  --whiteColor: #fff;
+  --backgroundLightBlue: #cbeef3c4;
+  --backgroundPink: #f49cbb;
+  --commonBorderRadiusPx: 8px;
+  --commonOneDimensionPaddingPx: 10px;
+  --commonTwoDimensionPaddingPx: 10px 20px;
+
   position: fixed;
   top: 0;
   display: flex;
@@ -7,7 +21,7 @@ header {
   height: 100px;
   /* font-size: 18px; */
   font-weight: 700;
-  background-color: white;
+  background-color: var(--whiteColor);
   z-index: 1000; /* always on top */
 }
 
@@ -17,13 +31,13 @@ header {
   border: none;
   margin-right: auto; /* Pushes all elements to the right */
   margin-left: 10px; /* for better look, not left:0 */
+  cursor: pointer;
 }
 
 .header-placeholder-for-css-container {
   flex-grow: 1; /* Takes up all available space */
 }
 
-.header-search-container,
 .header-inbox-container,
 .header-upgrade-account-container,
 .header-dropdown-container {
@@ -36,10 +50,19 @@ header {
   box-sizing: content-box;
 }
 
+.header-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 30px;
+  box-sizing: content-box;
+}
+
 .header-search-container:hover,
 .header-inbox-container:hover,
 .header-dropdown-container:hover {
-  color: #c9184a;
+  color: var(--secondDarkRed);
   background-color: #ffb3c135;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
@@ -52,12 +75,12 @@ header {
 .header-upgrade-account-button,
 .header-search-dropdown-modal-show-my-matches-button,
 .header-setting-modal-container-save-button {
-  background-color: #c9184a;
+  background-color: var(--secondDarkRed);
   width: fit-content;
-  color: white;
+  color: var(--whiteColor);
   padding: 12px;
   font-size: inherit;
-  border: 1px solid #c9184a;
+  border: 1px solid var(--secondDarkRed);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -65,7 +88,7 @@ header {
 .header-upgrade-account-button:hover,
 .header-search-dropdown-modal-show-my-matches-button:hover,
 .header-setting-modal-container-save-button:hover {
-  background-color: #a90f3d;
+  background-color: var(--darkRed);
   transition: background-color 0.3s;
 }
 
@@ -73,7 +96,7 @@ header {
   height: 100%;
   width: 100%;
   background-color: transparent;
-  color: #c9184a;
+  color: var(--secondDarkRed);
   font-size: 36px;
   border: none;
   cursor: pointer;
@@ -83,9 +106,9 @@ header {
 .header-dropdown-menu {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: var(--whiteColor);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px var(--lightGrey);
   z-index: 1;
 }
 
@@ -98,7 +121,7 @@ header {
   right: 1px;
   padding: 30px 20px;
   border-radius: 8px 0 0 8px;
-  background-color: white;
+  background-color: var(--whiteColor);
   line-height: 2;
 }
 
@@ -115,7 +138,7 @@ header {
 
 .header-dropdown-menu div:hover,
 .header-dropdown-menu a:hover {
-  color: #c9184a;
+  color: var(--secondDarkRed);
   transition: color 0.3s;
 }
 
@@ -133,9 +156,9 @@ header {
 .header-search-dropdown-menu {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: var(--whiteColor);
   min-width: 600px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px var(--lightGrey);
   z-index: 1;
 }
 
@@ -147,8 +170,8 @@ header {
   top: 104px;
   right: 1px;
   padding: 30px 20px;
-  border-radius: 8px;
-  background-color: white;
+  border-radius: var(--commonBorderRadiusPx);
+  background-color: var(--whiteColor);
   line-height: 2;
   gap: 15px;
 }
@@ -189,6 +212,11 @@ header {
   font-weight: normal;
 }
 
+.header-search-dropdown-modal-video-availability-section label,
+.header-search-dropdown-modal-video-availability-section input {
+  cursor: pointer;
+}
+
 .header-search-dropdown-modal-location-section input {
   width: 96%;
 }
@@ -196,7 +224,7 @@ header {
 .header-search-dropdown-modal-reset-button {
   border: none;
   background-color: transparent;
-  color: grey;
+  color: var(--secondDarkGrey);
   text-decoration: underline;
   width: fit-content;
   cursor: pointer;
@@ -211,7 +239,7 @@ header {
 }
 
 .header-search-dropdown-modal-reset-button:hover {
-  color: #c9184a;
+  color: var(--secondDarkRed);
   transition: color 0.3s;
 }
 
@@ -227,7 +255,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--secondDarkGrey);
 }
 
 .header-setting-modal-container.show,
@@ -242,13 +270,16 @@ header {
   flex-direction: column;
   align-items: stretch;
   gap: 5px;
-  background-color: #cbeef3c4;
-  background-image: linear-gradient(#cbeef3, #f49cbbc6);
+  background-color: var(--backgroundLightBlue);
+  background-image: linear-gradient(
+    var(--backgroundLightBlue),
+    var(--backgroundPink)
+  );
   margin: 10% 25%;
   padding: 30px 25px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--lightGrey);
   border-radius: 20px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 3px 0px var(--lightGrey);
   width: 70%;
   overflow-y: scroll;
 }
@@ -259,13 +290,16 @@ header {
   flex-direction: column;
   align-items: stretch;
   gap: 5px;
-  background-color: #cbeef3c4;
-  background-image: linear-gradient(#f49cbb, #cbeef3c4);
+  background-color: var(--backgroundLightBlue);
+  background-image: linear-gradient(
+    var(--backgroundPink),
+    var(--backgroundLightBlue)
+  );
   margin: 10% 25%;
   padding: 30px 25px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--lightGrey);
   border-radius: 20px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 3px 0px var(--lightGrey);
   width: 70%;
   height: 70%;
   overflow-y: scroll;
@@ -276,12 +310,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  background-color: white;
-  margin: 10% 10%;
+  background-color: var(--whiteColor);
+  margin: 10%;
   padding: 30px 25px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--lightGrey);
   border-radius: 20px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 3px 0px var(--lightGrey);
   width: 100%;
   height: 70%;
   overflow-y: scroll;
@@ -296,7 +330,7 @@ header {
   right: 20px;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: var(--whiteColor);
   cursor: pointer;
 }
 
@@ -312,7 +346,7 @@ header {
 .header-setting-modal-container-content-close:hover,
 .header-helper-center-modal-container-content-close:hover,
 .header-update-account-modal-container-content-close:hover {
-  color: #c9184a;
+  color: var(--secondDarkRed);
 }
 
 .header-setting-modal-container-content h1,
@@ -354,7 +388,7 @@ header {
 .header-setting-modal-container-content select {
   box-sizing: border-box;
   padding: 5px 8px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--lightGrey);
   border-radius: 4px;
   height: 35px;
   font-size: 18px;
@@ -363,7 +397,7 @@ header {
 .header-setting-modal-container-content input {
   box-sizing: border-box;
   padding: 5px 8px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--lightGrey);
   border-radius: 4px;
   height: auto;
   font-size: 18px;
@@ -387,7 +421,7 @@ header {
 
 .header-setting-modal-container-content-small-font-paragraph {
   font-size: 14px;
-  color: grey;
+  color: var(--secondDarkGrey);
   margin: 0;
 }
 
@@ -396,11 +430,11 @@ header {
   flex-direction: row;
   width: 95%;
   height: 90%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border: 1px solid var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
   justify-content: end;
   overflow-y: scroll;
-  padding: 10px;
+  padding: var(--commonOneDimensionPaddingPx);
 }
 
 .header-update-account-modal-inner-left-content,
@@ -421,8 +455,8 @@ header {
   flex-direction: column;
   gap: 5px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border: 1px solid var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
   justify-content: flex-start;
   align-items: stretch;
   padding: 5px 10px;
@@ -433,7 +467,7 @@ header {
 .header-update-account-modal-inner-left-content-area:hover,
 .header-update-account-modal-inner-middle-content-area:hover,
 .header-update-account-modal-inner-right-content-area:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px var(--lightGrey);
   border: 2px;
   transition: box-shadow 0.3s ease;
 }
@@ -445,7 +479,7 @@ header {
 .header-update-account-modal-larger-h3 {
   font-size: 1.5em;
   margin: 15px 0;
-  color: #c9184a;
+  color: var(--secondDarkRed);
 }
 
 .header-update-account-modal-inner-container h4 {
@@ -459,18 +493,18 @@ header {
 }
 
 .header-update-account-modal-inner-grey-font {
-  color: rgba(128, 128, 128, 0.5);
+  color: var(--lightGrey);
 }
 
 .header-update-account-modal-inner-button {
   border: none;
   background-color: #19a98f;
-  color: white;
+  color: var(--whiteColor);
   padding: 5px;
   cursor: pointer;
   line-height: 2;
   font-size: 18px;
-  border-radius: 8px;
+  border-radius: var(--commonBorderRadiusPx);
 }
 
 .header-update-account-modal-inner-button:hover,
