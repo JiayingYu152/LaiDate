@@ -1,8 +1,22 @@
 body {
+  --backgroundLightPink: #ffb3c11a;
+  --darkRed: #a90f3d;
+  --secondDarkRed: #c9184a;
+  --mostLightPink: #ffb3c141;
+  --lightGrey: rgba(0, 0, 0, 0.2);
+  --secondDarkGrey: rgba(0, 0, 0, 0.4);
+  --darkGrey: rgba(0, 0, 0, 0.8);
+  --whiteColor: #fff;
+  --backgroundLightBlue: #cbeef3c4;
+  --backgroundPink: #f49cbb;
+  --commonBorderRadiusPx: 8px;
+  --commonOneDimensionPaddingPx: 10px;
+  --commonTwoDimensionPaddingPx: 10px 20px;
+  
   /* all pages should copy this */
   margin: auto;
   font-family: "Roboto", sans-serif;
-  background-color: #ffb3c11a;
+  background-color: var(--backgroundLightPink);;
 }
 
 main {
@@ -36,7 +50,7 @@ h3 {
 
 .presents-page-switch-bar-container h3:hover {
   cursor: pointer;
-  color: #a90f3d;
+  color: var(--darkRed);
   text-decoration: underline;
   transition: background-color 0.3s;
 }
@@ -51,7 +65,7 @@ h3 {
 .presents-page-switch-bar-credit-content {
   position: absolute;
   left: 80%;
-  color: #a90f3d;
+  color: var(--darkRed);
   font-size: 22px;
 }
 
@@ -84,11 +98,11 @@ h3 {
   align-items: center;
   width: 220px;
   height: 300px;
-  background-color: white;
-  border: 1px solid grey;
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 10px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--secondDarkGrey);
+  box-shadow: 0px 5px 8px 0px var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
+  padding: var(--commonOneDimensionPaddingPx);
   text-align: center;
   position: relative;
 }
@@ -97,7 +111,7 @@ h3 {
 .buy-gift-show-card-container:focus,
 .bucket-gift-card-container:hover,
 .bucket-gift-card-container:focus {
-  box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 12px 15px 0px var(--lightGrey);
   transition: box-shadow 0.3s;
 }
 
@@ -106,7 +120,7 @@ h3 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  box-shadow: 0px 5px 8px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 8px 4px var(--lightGrey);
 }
 
 .buy-gift-show-card-container p {
@@ -117,11 +131,11 @@ h3 {
   position: absolute;
   width: 70%;
   bottom: 20px;
-  background-color: #c9184a;
-  color: white;
+  background-color: var(--secondDarkRed);
+  color: var(--whiteColor);
   padding: 8px;
   font-size: inherit;
-  border: 1px solid #c9184a;
+  border: 1px solid var(--secondDarkRed);
   border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
@@ -129,7 +143,7 @@ h3 {
 
 .buy-gift-show-card-container button:hover,
 .bucket-gift-card-container button:hover {
-  background-color: #a90f3d;
+  background-color: var(--darkRed);
   transition: background-color 0.3s;
 }
 
@@ -147,11 +161,11 @@ h3 {
   align-items: center;
   width: 220px;
   height: 360px;
-  background-color: white;
-  border: 1px solid grey;
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 10px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--secondDarkGrey);
+  box-shadow: 0px 5px 8px 0px var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
+  padding: var(--commonOneDimensionPaddingPx);
   text-align: center;
   position: relative;
 }
@@ -165,11 +179,11 @@ h3 {
   position: absolute;
   width: 70%;
   bottom: 20px;
-  background-color: #c9184a;
-  color: white;
+  background-color: var(--secondDarkRed);
+  color: var(--whiteColor);
   padding: 8px;
   font-size: inherit;
-  border: 1px solid #c9184a;
+  border: 1px solid var(--secondDarkRed);
   border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
@@ -193,7 +207,7 @@ h3 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color:var(--secondDarkGrey);
 }
 
 .presents-page-credit-refill-modal-content,
@@ -203,12 +217,12 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: var(--whiteColor);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
+  box-shadow: 0px 2px 3px 0px var(--lightGrey);
   width: 40%;
   gap: 20px;
 }
@@ -222,7 +236,7 @@ h3 {
 .presents-page-credit-refill-modal-close-button,
 .presents-page-gift-purchase-modal-close-button,
 .presents-page-exchange-to-credit-modal-close-button {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--secondDarkGrey);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -238,7 +252,7 @@ h3 {
 .presents-page-gift-purchase-modal-close-button:focus
   .presents-page-exchange-to-credit-modal-close-button:hover,
 .presents-page-exchange-to-credit-modal-close-button:focus {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--secondDarkGrey);
   text-decoration: none;
   cursor: pointer;
 }
@@ -268,10 +282,10 @@ h3 {
 .presents-page-gift-purchase-modal-submit-credit-button,
 .presents-page-exchange-to-credit-modal-submit-credit-button {
   width: 150px;
-  background-color: #c9184a;
-  border: 1px solid #a90f3d;
-  padding: 10px 20px;
-  color: white;
+  background-color: var(--secondDarkRed);
+  border: 1px solid var(--darkRed);
+  padding: var(--commonTwoDimensionPaddingPx);
+  color: var(--whiteColor);
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
@@ -280,6 +294,6 @@ h3 {
 .presents-page-credit-refill-modal-submit-credit-button:hover,
 .presents-page-gift-purchase-modal-submit-credit-button:hover,
 .presents-page-exchange-to-credit-modal-submit-credit-button {
-  background-color: #a90f3d;
+  background-color: var(--darkRed);
   transition: height 0.3s ease;
 }

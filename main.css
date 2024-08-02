@@ -1,8 +1,21 @@
 body {
+  --backgroundLightPink: #ffb3c11a;
+  --darkRed: #a90f3d;
+  --secondDarkRed: #c9184a;
+  --mostLightPink: #ffb3c141;
+  --lightGrey: rgba(0, 0, 0, 0.2);
+  --secondDarkGrey: rgba(0, 0, 0, 0.4);
+  --darkGrey: rgba(0, 0, 0, 0.8);
+  --whiteColor: #fff;
+  --backgroundLightBlue: #cbeef3c4;
+  --backgroundPink: #f49cbb;
+  --commonBorderRadiusPx: 8px;
+  --commonOneDimensionPaddingPx: 10px;
+  --commonTwoDimensionPaddingPx: 10px 20px;
   /* all pages should copy this */
   margin: auto;
   font-family: "Roboto", sans-serif;
-  background-color: #ffb3c11a;
+  background-color: var(--backgroundLightPink);
 }
 
 main {
@@ -23,7 +36,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding: var(--commonOneDimensionPaddingPx);
   height: calc(100vh - 120px);
 }
 
@@ -38,7 +51,7 @@ main {
   width: 290px;
   height: calc(100vh - 140px);
   gap: 10px;
-  padding: 10px;
+  padding: var(--commonOneDimensionPaddingPx);
 }
 
 .main-page-left-upper-component-container {
@@ -53,7 +66,7 @@ main {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: var(--commonOneDimensionPaddingPx);
   gap: 10px;
 }
 
@@ -61,16 +74,16 @@ main {
   height: 40%;
   display: flex; /* for inside component */
   flex-direction: column;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
 }
 
 .main-page-right-bottom-component-container {
   height: 60%;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--lightGrey);
+  border-radius: var(--commonBorderRadiusPx);
 }
 
 .main-page-right-upper-component-container,
@@ -87,7 +100,7 @@ main {
   justify-content: space-between;
   font-weight: 700;
   border-radius: 8px 8px 0 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--lightGrey);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -102,6 +115,7 @@ main {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .main-page-right-upper-component-search-bar-content {
@@ -120,13 +134,13 @@ main {
   flex-grow: 1;
   height: 30px;
   border: none;
-  color: darkgray;
+  color: var(--secondDarkGrey);
   font-size: medium;
   background-color: transparent;
 }
 
 .main-page-right-upper-component-search-bar-input-content::placeholder {
-  color: darkgray;
+  color: var(--secondDarkGrey);
 }
 .main-page-right-upper-component-search-bar-input-content:focus {
   outline: none;
@@ -142,8 +156,8 @@ main {
 
 .main-page-right-bottom-component-my-contacts-show-less-button {
   border: none;
-  background-color: white;
-  color: #c9184a;
+  background-color: var(--whiteColor);
+  color: var(--secondDarkRed);
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -160,6 +174,7 @@ main {
   text-align: center;
   margin-right: 13px;
   margin-left: 2px;
+  cursor: pointer;
 }
 
 .main-page-left-upper-component-one-profile img {
@@ -167,8 +182,8 @@ main {
   height: 65px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid white;
-  box-shadow: 0 0 0 2px #a90f3d;
+  border: 1px solid var(--whiteColor);
+  box-shadow: 0 0 0 2px var(--darkRed);
 }
 
 .main-page-left-upper-component-one-profile p {
@@ -188,7 +203,7 @@ main {
 
 .main-page-left-bottom-component-page-choose-header:hover,
 .main-page-left-bottom-component-page-choose-header:focus {
-  color: #a90f3d;
+  color: var(--darkRed);
 }
 
 /* overlay */
@@ -199,7 +214,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--darkGrey);
   align-items: center;
   justify-content: center;
   z-index: 2000;
@@ -215,11 +230,11 @@ main {
   right: 20px;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: var(--whiteColor);
   cursor: pointer;
 }
 .main-page-overlay-close:hover {
-  color: #c9184a;
+  color: var(--secondDarkRed);
 }
 .main-page-overlay-bottom-floating-div {
   position: absolute;
@@ -228,7 +243,7 @@ main {
   height: 120px;
   background: rgba(255, 255, 255, 0.7);
   color: black;
-  padding: 10px;
+  padding: var(--commonOneDimensionPaddingPx);
   text-align: center;
   line-height: 2;
 }
@@ -238,10 +253,10 @@ main {
 .main-page-overlay-bottom-floating-div button {
   width: 150px;
   height: 40px;
-  background-color: #c9184a;
-  border: 1px solid #a90f3d;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: var(--secondDarkRed);
+  border: 1px solid var(--darkRed);
+  box-shadow: 0px 8px 16px 0px var(--secondDarkGrey);
+  color: var(--whiteColor);
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
@@ -250,7 +265,7 @@ main {
   line-height: 30px;
 }
 .main-page-overlay-bottom-floating-div button:hover {
-  background-color: #a90f3d;
+  background-color: var(--darkRed);
   transition: height 0.3s ease;
 }
 .main-page-overlay-bottom-floating-div button img {
@@ -309,19 +324,19 @@ main {
   text-overflow: ellipsis;
 }
 .main-page-right-bottom-component-one-chat-request-reply-button {
-  background-color: #c9184a;
+  background-color: var(--secondDarkRed);
   width: fit-content;
-  color: white;
+  color: var(--whiteColor);
   padding: 5px 2px 5px 2px;
   font-size: inherit;
-  border: 1px solid #c9184a;
+  border: 1px solid var(--secondDarkRed);
   border-radius: 4px;
   cursor: pointer;
   margin-left: 5px;
   margin-right: 5px;
 }
 .main-page-right-bottom-component-one-chat-request-reply-button:hover {
-  background-color: #a90f3d;
+  background-color: var(--darkRed);
   transition: background-color 0.3s ease;
 }
 
@@ -372,9 +387,9 @@ main {
   height: 300px;
   margin: 10px;
   box-sizing: border-box;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: var(--whiteColor);
+  border-radius: var(--commonBorderRadiusPx);
+  border: 1px solid var(--lightGrey);
 }
 .main-page-left-bottom-component-profile-gallery-card-image {
   width: 100%;
@@ -410,8 +425,8 @@ main {
 }
 .main-page-left-bottom-component-profile-gallery-card-one-tag {
   display: inline-block;
-  color: #c9184a;
-  background-color: #ffb3c141;
+  color: var(--secondDarkRed);
+  background-color: var(--mostLightPink);
   padding: 3px 2px 3px 2px;
   margin-top: 3px;
   margin-right: 3px;

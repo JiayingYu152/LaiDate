@@ -1,7 +1,21 @@
 body {
+  --backgroundLightPink: #ffb3c11a;
+  --darkRed: #a90f3d;
+  --secondDarkRed: #c9184a;
+  --mostLightPink: #ffb3c141;
+  --lightGrey: rgba(0, 0, 0, 0.2);
+  --secondDarkGrey: rgba(0, 0, 0, 0.4);
+  --darkGrey: rgba(0, 0, 0, 0.8);
+  --whiteColor: #fff;
+  --backgroundLightBlue: #cbeef3c4;
+  --backgroundPink: #f49cbb;
+  --commonBorderRadiusPx: 8px;
+  --commonOneDimensionPaddingPx: 10px;
+  --commonTwoDimensionPaddingPx: 10px 20px;
+
   margin: auto;
   font-family: "Roboto", sans-serif;
-  background-color: #ffb3c11a;
+  background-color: var(--backgroundLightPink);
 }
 
 main {
@@ -47,7 +61,7 @@ main {
 .inbox-page-read-but-unanswered-switch-button:hover,
 .inbox-page-blocked-switch-button:hover {
   cursor: pointer;
-  color: #a90f3d;
+  color: var(--darkRed);
   text-decoration: underline;
   transition: background-color 0.3s;
 }
@@ -97,11 +111,11 @@ main {
   min-width: 900px;
   max-width: 1300px;
   display: flex;
-  background-color: white;
-  border: 1px solid #e0e0e0;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--lightGrey);
   border-radius: 4px;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: var(--commonTwoDimensionPaddingPx);
   box-sizing: border-box;
   align-items: center;
   /* justify-content: space-between; */
@@ -110,7 +124,7 @@ main {
 
 .inbox-page-section-card-container:hover {
   cursor: pointer;
-  background-color: #e7e7e7;
+  background-color: var(--lightGrey);
 }
 
 .inbox-page-section-card-container img {
